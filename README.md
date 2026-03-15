@@ -104,4 +104,3 @@ Deploy the `dist/` folder to any static host (Vercel, Netlify, GitHub Pages, Clo
 ## 📄 License
 
 This project is for personal/portfolio use.  
-Add a license file if you plan to use it in production.
