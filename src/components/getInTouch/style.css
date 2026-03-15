@@ -1,0 +1,60 @@
+.touch {
+  padding: 3em;
+}
+
+.touch-nav {
+  padding: 3em 0;
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.touch-main {
+  padding: 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.25em;
+
+  .contact-div {
+    width: 25%;
+    text-align: left;
+    margin-right: 2em;
+
+    h2 {
+      font-size: 1.25em;
+      padding: 1em 0;
+    }
+
+    p {
+      width: fit-content;
+      padding: 0.5em 0;
+      color: rgb(126, 126, 126);
+    }
+
+    p:hover {
+      cursor: pointer;
+      color: rgb(85, 85, 85);
+    }
+  }
+}
+
+.contact-slider {
+  width: fit-content;
+  overflow: hidden;
+  display: flex;
+  margin: 2em 0;
+
+  .slider-img-div {
+    width: 17em;
+    height: 17em;
+    margin: 0 1em;
+
+    img {
+      object-fit: cover;
+      height: 110%;
+      width: 100%;
+    }
+  }
+}

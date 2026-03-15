@@ -1,0 +1,130 @@
+.sustain {
+  height: 100vh;
+  position: relative;
+  color: var(--text-color);
+  overflow: hidden;
+  img {
+    height: 130%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.sustain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(11, 83, 148, 0.4);
+}
+
+.sustain-main {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 3em;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .sustain-main-bottom {
+    font-size: 1.25em;
+    width: 65%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 3em;
+
+    .sustain-img {
+      overflow: hidden;
+      width: 13em;
+      aspect-ratio: 1/1;
+      img {
+        width: 120%;
+        height: 120%;
+        object-fit: cover;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 0;
+        background-color: var(--text-color);
+        color: var(--secondary-text-color);
+        padding: 1em;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5em;
+      }
+    }
+
+    .sustain-right {
+      padding-bottom: 1em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+  }
+}
+
+.underSustain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3em;
+  padding-bottom: 0 !important;
+}
+
+.afterSusBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 15rem;
+  border: 1px solid rgb(222, 222, 222);
+
+  .susImgWrapper {
+    overflow: hidden;
+    height: 7rem;
+  }
+
+  .susSlider {
+    height: 35rem;
+    width: 15rem;
+  }
+
+  .susItem {
+    height: 7rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 15rem;
+    object-fit: cover;
+  }
+}

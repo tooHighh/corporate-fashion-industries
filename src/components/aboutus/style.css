@@ -1,0 +1,108 @@
+.aboutus {
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  background-color: var(--text-color);
+}
+
+.about-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  color: var(--secondary-color);
+  font-family: jetbrains-mono-bold, monospace;
+  font-size: 1.1em;
+  margin-bottom: 10em;
+}
+
+.about-main {
+  width: 100%;
+  padding: 3em;
+  padding-bottom: 0;
+
+  h1 {
+    overflow: hidden;
+    font-size: 5em;
+    width: 50%;
+    margin-bottom: 1em;
+
+    .lineH1 {
+      overflow: hidden;
+    }
+
+    .lineH1 span {
+      display: inline-block;
+    }
+  }
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 57.5% 37.5%;
+  column-gap: 5%;
+  align-items: start;
+  width: 100%;
+}
+
+.about-image-about {
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+  display: flex;
+  gap: 1.5em;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 2em;
+
+    div {
+      width: 25em;
+      height: 25em;
+      padding-top: 1.5em;
+      border-top: rgb(222, 222, 222) solid 1px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .column:nth-child(2) {
+    margin-top: 6em;
+  }
+}
+
+.about-pinned {
+  width: 100%;
+  margin-top: 3em;
+  p {
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin-bottom: 3em;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 2em;
+    cursor: pointer;
+    width: fit-content;
+
+    p {
+      display: inline;
+      padding-left: 0.5em;
+    }
+
+    div {
+      margin-top: 0.25em;
+      background-color: var(--secondary-text-color);
+      height: 3px;
+      width: 100%;
+    }
+  }
+}
