@@ -1,6 +1,6 @@
 # Corporate Fashion Industries
 
-A modern, responsive landing page for a corporate fashion brand, built with **React**, **TypeScript**, and **Vite**.
+A modern landing page for a corporate fashion brand, built with **React**, **TypeScript**, and **Vite**. Animated with some cool gsap animations, giving it a special spice!
 
 ---
 
